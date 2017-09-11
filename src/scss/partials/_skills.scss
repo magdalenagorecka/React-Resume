@@ -1,0 +1,46 @@
+@import "var";
+.skills{
+  width:60%;
+  background-color: #ddd;
+  &__item{
+    text-align: right;
+    padding-right: 15px;
+    line-height: 25px;
+    color: white;
+    font-size: .7em;
+  }
+}
+
+.label{
+  width: 35%;
+  padding-right: 20px;
+  text-align:left;
+  font-size:.8em;
+}
+.adv{
+  width:90%;
+  background-color: $color-bg;
+  animation:adv 2s ease-out;
+}
+.inter{
+  width:70%;
+  background-color:$color-grad-mid ;
+  animation:inter 2.5s ease-out;
+}
+.basic{
+  width:40%;
+  background-color: $color-grad;
+  animation:basic 2s ease-out;
+}
+@keyframes adv {
+  0%  { width:0px;}
+  100%{ width:90%;}
+}
+@keyframes inter {
+  0%  { width:0px;}
+  100%{ width:70%;}
+}
+@keyframes basic {
+  0%  { width:0px;}
+  100%{ width:40%;}
+}

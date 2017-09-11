@@ -1,0 +1,22 @@
+/* WEB FONTS */
+@import url('https://fonts.googleapis.com/css?family=Catamaran:200,400,700|Lora:400,400i');
+
+$font-primary: 'Catamaran', sans-serif;
+$font-secondary: 'Lora', serif;
+
+$color: #434343;
+$color-bg:#ee0979;
+$color-dark:#434343;
+$color-grad-mid:#f04f55;
+$color-grad:#ff6a00;
+$color-light:lighten($color-bg,19%);
+
+$break-xs: 575px;
+//landscape phones
+$break-s: 576px;
+//tablet
+$break-m: 768px;
+//desktop
+$break-l: 992px;
+//large desktop
+$break-xl: 1200px;

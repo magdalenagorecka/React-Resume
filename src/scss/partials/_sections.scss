@@ -1,0 +1,41 @@
+/* ====== SUMMARY ===== */
+.content__summary{
+  margin: 10% auto;
+  .btns {
+    margin-top: 40px;
+  }
+  @media screen and (min-width:$break-m) {
+    margin: 45% auto;
+  }
+
+}
+/*======= EXP ===========*/
+.content-exp{
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width:$break-m) {
+    flex-direction: row;
+  }
+  .content-exp__item{
+    text-align: justify;
+    &--right{
+      padding-left: 10px;
+      @media screen and (min-width:$break-m) {
+        width: 75%;
+      }
+    }
+    &--left{
+      padding-right: 10px;
+      @media screen and (min-width:$break-m) {
+        width: 15%;
+      }
+      h3{
+        font-size:.9em;
+      }
+    }
+
+  }
+}
+.school{
+  line-height: 1em;
+}

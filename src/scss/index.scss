@@ -1,0 +1,153 @@
+@import 'partials/var', 'partials/nav', 'partials/sections', 'partials/photo', 'partials/projects', 'partials/skills';
+
+* {
+  box-sizing: border-box;
+}
+
+/* ========= BODY ============= */
+
+body{
+  margin:0;
+  padding:0;
+  font-family: $font-primary;
+  line-height: normal;
+}
+
+p {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 0.9em;
+    text-align: justify;
+  }
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width:$break-m) {
+    flex-direction: row;
+  }
+  &__item{
+    @media screen and (min-width:$break-m) {
+      width:50%
+    }
+    &--left{
+
+      background: url("../img/magdalenagorecka.png") no-repeat;
+      background: -webkit-linear-gradient(to right bottom,$color-bg, $color-grad), url("../img/magdalenagorecka.png") no-repeat ;/* For Safari */
+      background: -o-linear-gradient(to right bottom,$color-bg, $color-grad), url("../img/magdalenagorecka.png") no-repeat; /* For Opera*/
+      background: -moz-linear-gradient(to right bottom,$color-bg, $color-grad), url("../img/magdalenagorecka.png") no-repeat; /* For Firefox*/
+      background: linear-gradient(to right bottom,$color-bg, $color-grad), url("../img/magdalenagorecka.png") no-repeat;
+      background-blend-mode: multiply;
+      background-size: cover;
+      @media screen and (min-width:$break-m) {
+        height:100vh;
+        position: fixed;
+      }
+    }
+    &--right{
+      padding: 0 5%;
+      @media screen and (min-width:$break-m) {
+        text-align: center;
+        float: right;
+        margin-left:50%;
+        overflow: scroll;
+      }
+    }
+    .content{
+      margin-top:5%;
+    }
+  }
+}
+.hero{
+  margin:50% 0;
+  @media screen and (min-width:$break-m) {
+    margin:70% 0;
+  }
+  @media screen and (min-width:$break-l) {
+    margin:60% 0;
+  }
+  @media screen and (min-width:$break-xl) {
+    margin:50% 0;
+  }
+  text-align: center;
+  color:white;
+}
+
+.social{
+  margin-top:30px;
+  a{
+    padding: 10px;
+    color: white;
+  }
+}
+
+/* ============ HEADINGS ============ */
+h1 {
+  font-family: $font-primary;
+  font-size: 1.5em;
+  font-weight:bold;
+}
+h2 {
+  font-family: $font-secondary;
+  background: linear-gradient(to right bottom,$color-bg, $color-grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3 {
+  font-family: $font-secondary;
+  font-size: 1.02em;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.6em;
+}
+h4{
+  font-family: $font-primary;
+
+}
+
+
+/* ======= ELEMENTS ================ */
+ul{
+ list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.btn{
+  display:block;
+  width:100%;
+  padding: 20px 40px;
+  margin-top:20px;
+  text-align: center;
+  @media screen and (min-width:$break-m) {
+    display: inline;
+    padding: 10px 20px;
+    margin:0 20px;
+  }
+
+  border:1px solid $color-bg;
+  background-color: transparent;
+  font-family: $font-secondary;
+  font-size:0.8em;
+  color: $color-bg;
+  transition: 0.6s;
+  transition-property: background-color;
+  &:hover{
+    background: linear-gradient(to right bottom,$color-bg, $color-grad);
+    color: white;
+  }
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect( 1px, 1px, 1px, 1px );
+    clip-path: inset( 50% );
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal;
+}
